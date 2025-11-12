@@ -1,0 +1,24 @@
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 15:46 ?        00:00:00 /sbin/init
+root           2       1  0 15:46 ?        00:00:00 /init
+root           6       2  0 15:46 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          44       1  0 15:46 ?        00:00:00 /usr/lib/systemd/systemd-journald
+root          91       1  0 15:46 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+systemd+     107       1  0 15:46 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+systemd+     108       1  0 15:46 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+root         163       1  0 15:46 ?        00:00:00 /usr/sbin/cron -f -P
+message+     164       1  0 15:46 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         174       1  0 15:46 ?        00:00:00 /usr/lib/systemd/systemd-logind
+root         177       1  0 15:46 ?        00:00:00 /usr/libexec/wsl-pro-service -vv
+root         192       1  0 15:46 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+syslog       195       1  0 15:46 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         198       1  0 15:46 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         200       1  0 15:46 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         292       2  0 15:46 ?        00:00:00 /init
+root         293     292  0 15:46 ?        00:00:00 /init
+seoje        294     293  0 15:46 pts/0    00:00:00 -bash
+root         295       2  0 15:46 pts/1    00:00:00 /bin/login -f
+seoje        347       1  0 15:46 ?        00:00:00 /usr/lib/systemd/systemd --user
+seoje        348     347  0 15:46 ?        00:00:00 (sd-pam)
+seoje        357     295  0 15:46 pts/1    00:00:00 -bash
+seoje        393     294  0 15:56 pts/0    00:00:00 ps -ef
